@@ -1,0 +1,361 @@
+body {
+  background-image: url("bg.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 450px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+@font-face {
+  src: url("Oswald-Bold.ttf");
+  font-family: Oswald-Bold;
+}
+@font-face {
+  src: url("Oswald-Regular.ttf");
+  font-family: Oswald-Regular;
+}
+
+/* Дизайн для смартфонов */
+@media screen and (min-width:100px) and (max-width:800px) {
+  h1 {
+    font-family: Oswald-Bold;
+    font-size: 56px;
+    margin-left: 20px;
+  }
+  nav {
+    text-align: center;
+    background-color: #303B3A;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    z-index: 1;
+  }
+  /* Ссылки на разделы сайта */
+  .nav_ref {
+    font-family: Oswald-Bold;
+    color: #E3E3E3;
+    font-size: 48px;
+    text-decoration: none;
+    position: relative;
+    top: 30%;
+    left: 0;
+    border: 5px solid #303B3A;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    transition: border 0.2s;
+  }
+  main {
+    font-family: Oswald-Regular;
+    color: #E3E3E3;
+    font-size: 54px;
+    line-height: 58px;
+    position: relative;
+    left: 3%;
+    top: 80px;
+    margin-top: 5%;
+    width: 96%;
+    z-index: 0;
+  }
+  aside {
+    color: #E3E3E3;
+    font-family: Oswald-Regular;
+    font-size: 36px;
+    position: absolute;
+    right: 9%;
+    top: 12%;
+  }
+  input {
+    background-color: #191919;
+    width: 404px;
+    height: 80px;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px #E3E3E3 solid;
+    font-family: Oswald-Regular;
+    font-size: 34px;
+    color: #E3E3E3;
+  }
+  textarea {
+    background-color: #191919;
+    width: 400px;
+    height: 210px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px #E3E3E3 solid;
+    font-family: Oswald-Regular;
+    font-size: 34px;
+    color: #E3E3E3;
+  }
+  /* Кнопка отправки */
+  #send {
+    font-size: 34px;
+    margin-left: 22%;
+    width: 30%;
+    height: 10%;
+  }
+  /* Кнопка отправляющая вверх страницы */
+  #toTop {
+    width: 170px;
+    height: 70px;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    cursor: pointer;
+    display: none;
+    font-family: Oswald-Regular;
+    color: #E3E3E3;
+    background-color: #191919;
+    border: #E3E3E3 1px solid;
+    border-radius: 10px;
+    padding-left: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 34px;
+  }
+  footer {
+    color: #E3E3E3;
+    text-align: center;
+    font-family: Oswald-Regular;
+    font-size: 34px;
+    width: 100%;
+  }
+}
+
+/* Дизайн для планшетов */
+@media screen and (min-width:800px) and (max-width:1300px) {
+  h1 {
+    font-family: Oswald-Bold;
+    font-size: 54px;
+    margin-left: 20px;
+  }
+  nav {
+    text-align: center;
+    background-color: #303B3A;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    z-index: 1;
+  }
+  /* Ссылки на разделы сайта */
+  .nav_ref {
+    font-family: Oswald-Bold;
+    color: #E3E3E3;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    border: 5px solid #303B3A;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: inline-block;
+    width: 31%;
+    transition: border 0.2s;
+  }
+  main {
+    font-family: Oswald-Regular;
+    color: #E3E3E3;
+    font-size: 52px;
+    line-height: 56px;
+    position: relative;
+    left: 3%;
+    top: 70px;
+    margin-top: 5%;
+    width: 96%;
+    z-index: 0;
+  }
+  aside {
+    color: #E3E3E3;
+    font-family: Oswald-Regular;
+    font-size: 32px;
+    position: absolute;
+    right: 9%;
+    top: 10%;
+  }
+  input {
+    background-color: #191919;
+    width: 604px;
+    height: 55px;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px #E3E3E3 solid;
+    font-family: Oswald-Regular;
+    font-size: 34px;
+    color: #E3E3E3;
+  }
+  textarea {
+    background-color: #191919;
+    width: 600px;
+    height: 150px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px #E3E3E3 solid;
+    font-family: Oswald-Regular;
+    font-size: 34px;
+    color: #E3E3E3;
+  }
+  /* Кнопка отправки */
+  #send {
+    font-size: 34px;
+    margin-left: 22%;
+    width: 30%;
+    height: 10%;
+  }
+  /* Кнопка отправляющая вверх страницы */
+  #toTop {
+    width: 170px;
+    height: 70px;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    cursor: pointer;
+    display: none;
+    font-family: Oswald-Regular;
+    color: #E3E3E3;
+    background-color: #191919;
+    border: #E3E3E3 1px solid;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 32px;
+  }
+  footer {
+    color: #E3E3E3;
+    text-align: center;
+    font-family: Oswald-Regular;
+    font-size: 30px;
+    width: 100%;
+  }
+}
+
+/* Дизайн для компьютеров */
+@media screen and (min-width:1300px) and (max-width:9000px) {
+  h1 {
+    font-family: Oswald-Bold;
+    font-size: 32px;
+    margin-left: 20px;
+  }
+  nav {
+    text-align: center;
+    background-color: #303B3A;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  /* Ссылки на разделы сайта */
+  .nav_ref {
+    font-family: Oswald-Bold;
+    color: #E3E3E3;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    border: 5px solid #303B3A;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: inline-block;
+    width: 32%;
+    transition: border 0.2s;
+  }
+  main {
+    font-family: Oswald-Regular;
+    color: #E3E3E3;
+    font-size: 24px;
+    line-height: 32px;
+    position: relative;
+    left: 3%;
+    top: 35px;
+    margin-top: 5%;
+    width: 96%;
+    z-index: 0;
+  }
+  aside {
+    color: #E3E3E3;
+    font-family: Oswald-Regular;
+    font-size: 20px;
+    position: absolute;
+    right: 9%;
+    top: 19%;
+  }
+  input {
+    background-color: #191919;
+    width: 950px;
+    height: 40px;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px #E3E3E3 solid;
+    font-family: Oswald-Regular;
+    font-size: 28px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    color: #E3E3E3;
+  }
+  textarea {
+    background-color: #191919;
+    width: 951px;
+    height: 120px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px #E3E3E3 solid;
+    font-family: Oswald-Regular;
+    font-size: 24px;
+    color: #E3E3E3;
+  }
+  /* Кнопка отправки */
+  #send {
+    font-size: 30px;
+    margin-left: 22%;
+    width: 30%;
+    height: 10%;
+  }
+  /* Кнопка отправляющая вверх страницы */
+  #toTop {
+    width: 110px;
+    height: 50px;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    cursor: pointer;
+    display: none;
+    font-family: Oswald-Regular;
+    color: #E3E3E3;
+    background-color: #191919;
+    border: #E3E3E3 1px solid;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  footer {
+    color: #E3E3E3;
+    text-align: center;
+    font-family: Oswald-Regular;
+    font-size: 22px;
+    width: 100%;
+  }
+}
+  /* Ссылки на разделы сайта */
+.nav_ref:hover {
+  border: 5px solid #FFFFFF;
+}
+section {
+  position: relative;
+  padding: 10px;
+}
+header {
+  margin-left: 5%;
+  text-decoration: underline;
+}
+a {
+  color: #3594F3;
+  text-decoration: none;
+}
